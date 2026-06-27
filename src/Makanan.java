@@ -24,7 +24,7 @@ public class Makanan extends Menu {
    
     @Override
     public int hitungHargaTotal() {
-        return getHargaDasar() + 2000;
+        return getHargaDasar();
     }
 
     @Override

@@ -32,7 +32,13 @@ public class Minuman extends Menu {
 
     @Override
     public void tampilkanDetail() {
-        System.out.println("[Minuman] " + getNama() + " (Size: " + ukuranCup + ")");
+        if (ukuranCup.equalsIgnoreCase("Large")) {
+            System.out.println("[Minuman] " + getNama() + " (Size: " + ukuranCup + " +5000)");
+        } else if (ukuranCup.equalsIgnoreCase("Medium")) {
+            System.out.println("[Minuman] " + getNama() + " (Size: " + ukuranCup + " +2000)");
+        } else {
+            System.out.println("[Minuman] " + getNama() + " (Size: " + ukuranCup + ")");
+        }
         System.out.println("          Harga Dasar : Rp" + getHargaDasar());
         System.out.println("          Harga Total : Rp" + hitungHargaTotal());
         System.out.println("---------------------------------------------");
