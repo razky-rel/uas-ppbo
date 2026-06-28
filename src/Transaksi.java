@@ -76,4 +76,7 @@ public class Transaksi {
         System.out.println("     Terima Kasih Atas Kunjungan Anda!       ");
         System.out.println("=============================================\n");
     }
+    public ArrayList<Menu> getListPesanan() {
+        return listPesanan;
+    }
 }
